@@ -1,0 +1,34 @@
+<ion-navbar *navbar primary>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Gestures</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+  <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tapped: {{tap}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Pressed: {{press}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (pan)="panEvent($event)">
+    <ion-item>
+      Panned: {{pan}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Swiped: {{swipe}} times
+    </ion-item>
+  </ion-card>
+
+</ion-content>

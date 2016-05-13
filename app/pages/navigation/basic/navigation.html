@@ -1,0 +1,15 @@
+<ion-navbar *navbar primary>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Navigation</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="#item of items" (click)="openNavDetailsPage(item)">
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+      {{ item.title }}
+    </button>
+  </ion-list>
+</ion-content>

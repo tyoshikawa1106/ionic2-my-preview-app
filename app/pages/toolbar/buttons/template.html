@@ -1,0 +1,24 @@
+<ion-navbar *navbar primary>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Toolbar(Buttons)</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+</ion-content>
+
+<ion-toolbar position="bottom" [attr.royal]="isAndroid ? ' ' : null" class="toolbar-buttons-page">
+  <ion-title class="footer-title">Ash, Misty, Brock</ion-title>
+  <ion-buttons end>
+    <button royal large showWhen="ios,windows">
+      Send
+      <ion-icon name="send"></ion-icon>
+    </button>
+    <button light large hideWhen="ios,windows">
+      Send
+      <ion-icon name="send"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
