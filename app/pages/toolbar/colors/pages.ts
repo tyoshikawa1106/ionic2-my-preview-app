@@ -16,7 +16,7 @@ export class Page4 {
   }
 
   goBack() {
-    this.nav.setRoot(ColorsPage);
+    this.nav.setRoot(ToolbarColorsPage);
   }
 }
 
